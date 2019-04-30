@@ -1,29 +1,28 @@
-# generateur-citation
+# Générateur de citation
 
-## Project setup
-```
-npm install
-```
+## Auteur :
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Lucas Hourquin
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Nature du projet :
 
-### Run your tests
-```
-npm run test
-```
+Exercice avec le Framework Javascript VueJS, ou je dois crée un générateur de citation aléatoire.
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Consignes :
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Vue-CLI !OBLIGATOIRE!
+* La génération de citation modifie le CSS
+* Au minimum 5 citation
+* La citation est mise en avant et le nom de l'auteur de celle-ci en bas à droite avec une police plus discrète
+
+### Date :
+
+Avril 2019
+
+### Organisme/entrprise : 
+
+Formation SIMPLON dévéloppeur web 
+
+
+
+### GHpage : 
