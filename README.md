@@ -19,7 +19,7 @@ Exercice avec le Framework Javascript VueJS, ou je dois crée un générateur de
 
 Avril 2019
 
-### Organisme/entrprise : 
+### Organisme/entreprise : 
 
 Formation SIMPLON dévéloppeur web 
 
