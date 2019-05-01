@@ -1,30 +1,19 @@
 <template>
   <div id="app">
-    <CitationHamlet/>
-    <CitationConfucius/>
-    <citation-jean-paul/>
-    <citation-albert/>
-    <citation-raymond/>
+    <Citation/>
   </div>
 </template>
 
 <script>
-import CitationHamlet from './components/CitationHamlet.vue'
-import CitationConfucius from './components/CitationConfucius.vue'
-import CitationJeanPaul from './components/CitationJeanPaul.vue'
-import CitationAlbert from './components/CitationAlbert.vue'
-import CitationRaymond from './components/CitationRaymond.vue'
+import Citation from './components/Citation.vue'
 
 
 export default {
   name: 'app',
-  components: {
-    CitationHamlet,
-    CitationConfucius,
-    CitationJeanPaul,
-    CitationAlbert,
-    CitationRaymond
+  components : {
+    Citation
   }
+  
 }
 </script>
 
