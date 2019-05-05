@@ -3,7 +3,8 @@
     <div 
     v-for="(component) in componentDisplay" 
     :key="component.id">
-    <h1>{{component.id}}</h1>
+    <h1>{{component.id.citation}}</h1>
+    <h2>{{component.id.authors}}</h2>
     </div>
     <button
     v-on:click="eventRandom"
@@ -18,15 +19,20 @@ export default {
     data () {
     return {
       componentNames : [
-        'On se prend souvent pour quelqu\'un, alors qu\'au fond, on est plusieurs. Raymond Devos',
+        {citation : 'On se prend souvent pour quelqu\'un, alors qu\'au fond, on est plusieurs.',
+        authors : 'Raymond Devos'},
 
-        'Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d\'ennuis te seront épargnés. Confucius',
+        {citation : 'Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d\'ennuis te seront épargnés.',
+        authors : 'Confucius'},
 
-        'La vie, c\'est comme une bicyclette, il faut avancer pour ne pas perdre l\'équilibre. Albert Einstein',
+        {citation : 'La vie, c\'est comme une bicyclette, il faut avancer pour ne pas perdre l\'équilibre.',
+        authors : 'Albert Einstein'},
 
-        'Qu\'est ce que l\'homme, si le bien suprême, l\'aubaine de sa vie est uniquement de dormir et de manger ? ... Une bête, rien de plus. William Shakespeare',
+        {citation : 'Qu\'est ce que l\'homme, si le bien suprême, l\'aubaine de sa vie est uniquement de dormir et de manger ? ... Une bête, rien de plus.',
+        authors : 'William Shakespeare'},
 
-        'Si quelqu\'un t\'a offensé, ne cherche pas à te venger. Assieds-toi au bord de la rivière et bientôt tu verras passer son cadavre. Lao Tseu'
+        {citation : 'Si quelqu\'un t\'a offensé, ne cherche pas à te venger. Assieds-toi au bord de la rivière et bientôt tu verras passer son cadavre.',
+        authors : 'Lao Tseu'}
       ],
       index : null,
       componentDisplay : []
