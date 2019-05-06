@@ -1,6 +1,8 @@
 <template class="citation">
-<div >
+<div>
+    
     <div class="container-citation" 
+
     v-for="(component) in componentDisplay" 
     :key="component.id">
     <h1>{{component.id.citation}}</h1>
@@ -35,21 +37,24 @@ export default {
         authors : 'Lao Tseu'}
       ],
       index : null,
-      componentDisplay : []
+      componentDisplay : [],
     }
 },
     methods : {
         getRandom : function () {
             this.index = this.componentNames[Math.floor(Math.random() * this.componentNames.length)]
+           
         },
         pushRandom : function () {
             this.componentDisplay.push({
                 id :this.index
             })
+            
         },
         popRandom : function () {
             if(this.componentDisplay.length > 1)
             this.componentDisplay.shift()
+            
         },
         eventRandom : function () {
             this.getRandom()
