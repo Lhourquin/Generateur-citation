@@ -67,7 +67,6 @@ grid-area : citation;
 
 }
 .container-citation{
-position: fixed;
 
 text-align: center;
 margin : 15vw;
