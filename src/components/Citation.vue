@@ -1,6 +1,6 @@
-<template>
-<div>
-    <div 
+<template class="citation">
+<div >
+    <div class="container-citation" 
     v-for="(component) in componentDisplay" 
     :key="component.id">
     <h1>{{component.id.citation}}</h1>
@@ -62,5 +62,22 @@ export default {
 </script>
 
 <style>
+.citation{
+grid-area : citation;
+
+}
+.container-citation{
+position: fixed;
+
+text-align: center;
+margin : 15vw;
+}
+h2{
+margin-left: 30vw;
+margin-top : 10vh;
+}
+button{
+text-align: center;
+}
 
 </style>

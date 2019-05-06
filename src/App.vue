@@ -1,17 +1,26 @@
 <template>
-  <div id="app">
-    <Citation />
+  <div id="app" class="container">
+    
+    <Header/>
+    <Citation/>
+    <Footer/>
+    <SideBar/>
   </div>
 </template>
 
 <script>
 import Citation from './components/Citation.vue'
-
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import SideBar from './components/SideBar.vue'
 
 export default {
   name: 'app',
   components : {
-    Citation
+    Citation,
+    Header,
+    SideBar,
+    Footer
   }
   
   }
@@ -19,13 +28,14 @@ export default {
 
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+.container{
+display : grid;
+text-align: center;
+  grid-template-areas: "header citation"
+                      
+                       "sidebar citation"
+                       
+                       "sidebar footer";
 }
 </style>
